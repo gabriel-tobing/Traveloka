@@ -2,7 +2,7 @@
 
 Welcome to the open source repository of **Ticket Booking, Vehicle Rental and Travel Sites**! This project was created using React.js, Vite, Tailwind CSS, Prisma, and MySQL, and is designed to help you create sites about travel, ticket booking, and vehicle rental for you to rent.
 
-![Screenshot 2023-12-04 at 11 40 49](https://i.im.ge/2023/12/04/CBkxvq.demo.png)
+<img width="1440" alt="Screenshot 2023-12-04 at 11 40 49" src="https://i.im.ge/2023/12/04/CBkxvq.demo.png">
 
 ## Introduction
 
