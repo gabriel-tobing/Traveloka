@@ -1,6 +1,6 @@
 import { FaCheck } from "react-icons/fa6";
 
-const Modal = () => {
+const SettingModal = () => {
   return (
     <div className="absolute top-full right-0 z-0 flex flex-row-reverse items-stretch basis-auto shrink-0 mt-1 pointer-events-auto">
       <div className="relative z-0 w-auto max-h-[75vh] flex flex-col items-stretch basis-auto shrink-0 bg-[rgba(255,255,255,1.00)] rounded-md shadow-[0_4px_10px_rgba(3,18,26,0.15)] scale-y-100 origin-[top_center] visible overflow-hidden">
@@ -220,4 +220,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default SettingModal;

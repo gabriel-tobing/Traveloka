@@ -8,51 +8,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins";
+  font-family: "MuseoSans";
 }
 
 @font-face {
-  font-family: poppins;
-  src: url(/public/fonts/Poppins-Light.ttf);
+  font-family: MuseoSans;
+  src: url(/public/fonts/MuseoSans-300.otf);
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
-
 @font-face {
-  font-family: poppins;
-  src: url(/public/fonts/Poppins-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: poppins;
-  src: url(/public/fonts/Poppins-Medium.ttf);
+  font-family: MuseoSans;
+  src: url(/public/fonts/MuseoSans_500.otf);
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
-
 @font-face {
-  font-family: poppins;
-  src: url(/public/fonts/Poppins-SemiBold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: poppins;
-  src: url(/public/fonts/Poppins-Bold.ttf);
+  font-family: MuseoSans;
+  src: url(/public/fonts/MuseoSans_700.otf);
   font-weight: 700;
-}
-
-@font-face {
-  font-family: poppins;
-  src: url(/public/fonts/Poppins-ExtraBold.ttf);
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: poppins;
-  src: url(/public/fonts/Poppins-Black.ttf);
-  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 .font-poppins {
-  font-family: poppins;
+  font-family: MuseoSans;
 }

@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { HiChevronDown } from "react-icons/hi";
-
-import Modal from "./components/modal";
+import Modal from "./components/modal/SettingModal";
 
 const Navbar = () => {
   return (
@@ -147,7 +145,7 @@ const Navbar = () => {
                   Register
                 </div>
                 <div className="relative z-0 flex justify-center items-center flex-1 opacity-100">
-                  <div className="max-w-full text-[rgba(255,255,255,1.00)] text-sm font-semibold text-center leading-4 text-ellipsis whitespace-nowrap break-words overflow-hidden">
+                  <div className="max-w-full text-[rgba(255,255,255,1.00)] text-[13px] font-bold text-center leading-4 text-ellipsis whitespace-nowrap break-words overflow-hidden">
                     Register
                   </div>
                 </div>
@@ -218,11 +216,14 @@ const Navbar = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute top-full right-0 z-0 flex flex-row-reverse items-stretch basis-auto shrink-0 min-w-max -mt-1 pointer-events-auto">
-                    <div className="relative z-0 flex flex-col items-stretch basis-auto shrink-0 w-full bg-[rgba(255,255,255,1.00)] rounded-md shadow-[0_4px_10px_rgba(3,18,26,0.15)] scale-y-100 origin-[top_center] hidden overflow-hidden">
+                  <div className="absolute top-full right-0 z-0 flex flex-row-reverse items-stretch basis-auto shrink-0 min-w-max -mt-1 pointer-events-auto hidden">
+                    <div className="relative z-0 flex flex-col items-stretch basis-auto shrink-0 w-full bg-[rgba(255,255,255,1.00)] rounded-md shadow-[0_4px_10px_rgba(3,18,26,0.15)] scale-y-100 origin-[top_center] overflow-hidden">
                       <div className="relative z-0 flex flex-col items-stretch basis-auto shrink-0 translate-y-0 origin-[top_center] opacity-100">
                         <div className="relative z-0 flex flex-col items-stretch basis-auto shrink-0 py-2 bg-[rgba(255,255,255,1.00)]">
-                          <Link to={"/"} className="relative flex items-center p-3 whitespace-nowrap">
+                          <Link
+                            to={"/"}
+                            className="relative flex items-center p-3 whitespace-nowrap hover:bg-[rgb(242,243,243)]"
+                          >
                             <img
                               src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/c/c69bbbaab19285dd98e27ec11d83bf33.svg"
                               alt=""
@@ -231,11 +232,14 @@ const Navbar = () => {
                               className="mr-2 object-fill"
                               style={{ objectPosition: "50% 50%" }}
                             />
-                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-medium leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
+                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-semibold leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
                               Flight + Hotel
                             </h4>
                           </Link>
-                          <Link to={"/"} className="relative flex items-center p-3 whitespace-nowrap">
+                          <Link
+                            to={"/"}
+                            className="relative flex items-center p-3 whitespace-nowrap hover:bg-[rgb(242,243,243)]"
+                          >
                             <img
                               src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/b/b5ba7b36551c2499565d55c265f5f9e7.svg"
                               alt=""
@@ -244,11 +248,14 @@ const Navbar = () => {
                               className="mr-2 object-fill"
                               style={{ objectPosition: "50% 50%" }}
                             />
-                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-medium leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
+                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-semibold leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
                               Travel Insurance
                             </h4>
                           </Link>
-                          <Link to={"/"} className="relative flex items-center p-3 whitespace-nowrap">
+                          <Link
+                            to={"/"}
+                            className="relative flex items-center p-3 whitespace-nowrap hover:bg-[rgb(242,243,243)]"
+                          >
                             <img
                               src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/4/43217640a8928e7daebe11d305c2494a.svg"
                               alt=""
@@ -257,11 +264,14 @@ const Navbar = () => {
                               className="mr-2 object-fill"
                               style={{ objectPosition: "50% 50%" }}
                             />
-                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-medium leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
+                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-semibold leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
                               International Data Plans
                             </h4>
                           </Link>
-                          <Link to={"/"} className="relative flex items-center p-3 whitespace-nowrap">
+                          <Link
+                            to={"/"}
+                            className="relative flex items-center p-3 whitespace-nowrap hover:bg-[rgb(242,243,243)]"
+                          >
                             <img
                               src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/3/350daed5305a7d6c7ffa9c66f20ea2b5.svg"
                               alt=""
@@ -270,11 +280,14 @@ const Navbar = () => {
                               className="mr-2 object-fill"
                               style={{ objectPosition: "50% 50%" }}
                             />
-                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-medium leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
+                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-semibold leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
                               Paylater
                             </h4>
                           </Link>
-                          <Link to={"/"} className="relative flex items-center p-3 whitespace-nowrap">
+                          <Link
+                            to={"/"}
+                            className="relative flex items-center p-3 whitespace-nowrap hover:bg-[rgb(242,243,243)]"
+                          >
                             <img
                               src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/e/e807cdb83ebd6fe9329c0e3ad4764265.svg"
                               alt=""
@@ -283,11 +296,14 @@ const Navbar = () => {
                               className="mr-2 object-fill"
                               style={{ objectPosition: "50% 50%" }}
                             />
-                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-medium leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
+                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-semibold leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
                               City Guides
                             </h4>
                           </Link>
-                          <Link to={"/"} className="relative flex items-center p-3 whitespace-nowrap">
+                          <Link
+                            to={"/"}
+                            className="relative flex items-center p-3 whitespace-nowrap hover:bg-[rgb(242,243,243)]"
+                          >
                             <img
                               src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v2/e/e676ec2c54d3d081691ff29b7fb9a97e.svg"
                               alt=""
@@ -296,7 +312,7 @@ const Navbar = () => {
                               className="mr-2 object-fill"
                               style={{ objectPosition: "50% 50%" }}
                             />
-                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-medium leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
+                            <h4 className="max-w-full text-[rgb(104,113,118)] text-sm font-semibold leading-4 text-left text-ellipsis overflow-hidden whitespace-nowrap break-words">
                               Gift Voucher
                             </h4>
                           </Link>

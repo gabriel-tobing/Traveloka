@@ -5,6 +5,9 @@ const config: Config = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      spacing: {
+        modifier: "calc(100% + 10px)",
+      },
       backgroundImage: {
         navbar: "linear-gradient(3.141592653589793rad, rgba(3, 18, 26, 0.325) 50%, rgba(3, 18, 26, 0) 100%)",
       },
